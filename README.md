@@ -17,6 +17,8 @@ Ladies and gentlemen, [CESIL](https://en.wikipedia.org/wiki/CESIL) time. That's 
 
 There are binaries and installation scripts for Linux and Shitdows in releases. On shitdows running the installation script should be enough. On linux, you need to run it with `sudo`!
 
+(Actually the installation scripts aren't ready yet, Ill add them later!)
+
 ## Syntax
 I was not able to find any official specifictions, so I had to go mainly by the wikipedia article. When it was first created, cesil was punched onto punch cards. This means that the syntax written in a text file on a computer must be modified a little. Here is what I did:
 - You are not forced to use columns
