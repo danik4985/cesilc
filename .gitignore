@@ -2,6 +2,9 @@
 release/
 target/
 
+# Trash
+trash/
+
 # Junk files
 cesilc
 test
