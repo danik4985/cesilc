@@ -1,0 +1,28 @@
+       IN
+       STORE    NUM
+       LOAD 0
+       STORE    ATT
+LOOP   LOAD     ATT
+       ADD 1
+       STORE    ATT
+       PRINT    "Your guess: "
+       UIN
+       SUBTRACT NUM
+       JIZERO   WIN
+       JINEG    HIGHER
+       PRINT    "Your number is too high!"
+       LINE
+       JUMP     LOOP
+HIGHER PRINT    "Your number is too low!"
+       LINE
+       JUMP     LOOP
+WIN    PRINT    "You won! It took you "
+       LOAD     ATT
+       OUT
+       PRINT    " attempts."
+       LINE
+       HALT
+
+%
+5
+*

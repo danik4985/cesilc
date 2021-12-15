@@ -1,0 +1,10 @@
+#include tests/data.ces
+
+LOOP IN
+	JINEG DONE
+	OUT
+	LINE
+	JUMP LOOP
+DONE PRINT "Done..."
+	LINE
+	HALT

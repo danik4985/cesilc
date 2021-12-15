@@ -1,0 +1,9 @@
+# Prebuilts
+release/
+target/
+
+# Junk files
+cesilc
+test
+test.sh
+test.ces

@@ -1,0 +1,12 @@
+        LOAD    +0
+LOOP    STORE   TOTAL
+        UIN
+        JINEG   DONE
+        ADD     TOTAL
+        JUMP    LOOP
+
+DONE    PRINT   "The total is: "
+        LOAD    TOTAL
+        OUT
+        LINE
+        HALT

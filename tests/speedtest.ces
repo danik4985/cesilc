@@ -1,0 +1,19 @@
+     LOAD     0
+     STORE    I
+     LOAD     99999999
+     STORE    MAX
+     DIVIDE   2
+     STORE    X
+LOOP LOAD     X
+		 SUBTRACT 1
+		 STORE    X
+		 LOAD     I
+     ADD      1
+		 STORE    I
+     SUBTRACT MAX
+		 JINEG    LOOP
+		 LOAD     X
+		 PRINT    "Val: "
+		 OUT
+		 LINE
+		 HALT

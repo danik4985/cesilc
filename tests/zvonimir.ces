@@ -1,0 +1,6 @@
+( Made by Zvonimír Květoslav Prdelka
+	LOAD +0
+LOOP ADD +1
+	OUT
+	LINE
+	JUMP LOOP

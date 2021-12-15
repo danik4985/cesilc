@@ -1,0 +1,24 @@
+         PRINT  "Enter 0 to test DIVb0.1 error "
+         UIN
+         JIZERO ERR1
+         JUMP   SEGMENT2
+ERR1     LOAD   5
+         DIVIDE 0
+SEGMENT2 PRINT  "Enter 0 to test DIVb0.2 error "
+         UIN
+				 JIZERO ERR2
+				 JUMP   SEGMENT3
+ERR2     STORE  NUM
+         LOAD   5
+		     DIVIDE NUM
+SEGMENT3 PRINT  "Enter 0 to test OOM error "
+         UIN
+         JIZERO ERR3
+				 JUMP   END
+ERR3     IN
+         IN
+END      HALT
+
+%
+69
+*
