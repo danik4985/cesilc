@@ -1,5 +1,6 @@
 # Prebuilts
-release/
+release/cesilc
+release/cesilc.exe
 target/
 
 # Trash

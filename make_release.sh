@@ -37,3 +37,10 @@ rm -f "release/cesilc.d"
 
 echo
 echo -e "\e[1m$status\e[0m"
+
+echo "Now lets make install scripts"
+
+node gen-install-linux.js
+i686-w64-mingw32-gcc release/install-shitdows.c -o install-shitdows.exe
+
+echo "Done!"
