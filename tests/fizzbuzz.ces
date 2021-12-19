@@ -1,0 +1,68 @@
+( The FizzBuzz Game in CESIL
+(
+( Copyright (C)2010 Andrew Jacobs
+( All rights reserved.
+(
+( Count from 1 to 100 saying Fizz for numbers which are multiples of 3, Buzz for
+( numbers which are multiples of 5 and FizzBuzz for numbers which are multiples
+( of both.
+
+	LOAD	1
+	STORE	COUNT
+
+( Reset the 'printed something' flag
+
+LOOP	LOAD	0
+	STORE	PRINTED
+
+( Test if the current number is divisible by 3
+
+TEST3	LOAD	COUNT
+	DIVIDE	3
+	MULTIPLY 3
+	SUBTRACT COUNT
+	JINEG	TEST5
+
+( It is so print Fizz and remember that we printed something
+
+	PRINT	"Fizz"
+	LOAD	-1
+	STORE	PRINTED
+
+( Test if the current number is divisble by 5
+
+TEST5	LOAD	COUNT
+	DIVIDE	5
+	MULTIPLY 5
+	SUBTRACT COUNT
+	JINEG	TESTN
+
+( It is so print Buzz and remember that we printed something
+
+	PRINT	"Buzz"
+	LOAD	-1
+	STORE	PRINTED
+
+( Have we printed anything so far?
+
+TESTN	LOAD	PRINTED
+	JINEG	SKIP
+
+( No, print out the number itself
+	LOAD	COUNT
+	OUT
+SKIP	LINE
+
+( Add one to the number
+
+	LOAD	COUNT
+	ADD	1
+	STORE	COUNT
+
+( Add repeat until we exceed 100
+
+	SUBTRACT 100
+	JINEG	LOOP
+	JIZERO	LOOP
+
+	HALT	
