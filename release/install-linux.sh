@@ -4,8 +4,9 @@ data="&&DATA&&"
 
 # Make sure user is root
 if [ "$(id -u)" != "0" ]; then
-	echo "This script must be run as root" 1>&2
-	exit 1
+	# echo "This script must be run as root" 1>&2
+	# exit 1
+	"$0"
 fi
 
 # Extract data to /usr/bin/cesil
