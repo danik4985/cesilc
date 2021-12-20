@@ -40,6 +40,8 @@ echo -e "\e[1m$status\e[0m"
 
 echo "Now lets make install scripts"
 
+[[ ! -f "release/cesilc.h" ]] && xxd -i release/cesilc.exe > release/cesilc.h
+
 node gen-install-linux.js
 i686-w64-mingw32-gcc release/install-shitdows.c -o install-shitdows.exe
 
