@@ -72,10 +72,10 @@ The compiler will detect the target you want from the output file extension.
 - [x] C (.c)
 - [x] native binaries (No extension [linux]/.app [MacOS]/.exe [Shitdows])
 - [x] Bash (.sh)
+- [x] JavaScript (.js)
 
 ### Planned
 - [ ] Java
-- [ ] JavaScript
 - [ ] APKs (using java)
 - [ ] Batch files (MS-DOS compatible)
 
