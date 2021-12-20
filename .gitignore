@@ -9,9 +9,9 @@ target/
 trash/
 
 # Junk files
-cesilc
-test
-test.sh
-test.ces
-install-shitdows.exe
-install-linux.sh
+/cesilc
+/test
+/test.sh
+/test.ces
+/install-shitdows.exe
+/install-linux.sh
