@@ -16,9 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-use transpilers::to_c::transpile_to_c;
-
-use crate::transpilers::to_sh::transpile_to_sh;
+use transpilers::{to_sh::transpile_to_sh, to_js::transpile_to_js, to_c::transpile_to_c};
 
 mod args;
 mod parsing;
@@ -46,6 +44,7 @@ fn main() {
 		"SOURCE_C" => transpile_to_c(),
 		"SOURCE_BASH" => transpile_to_sh(),
 		"BINARY" => transpile_to_c(),
+		"SOURCE_JS" => transpile_to_js(),
 
 		_ => transpile_to_c()
 	};

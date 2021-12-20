@@ -27,6 +27,7 @@ pub fn parse_args() -> Args {
 			outtype = match extension.to_ascii_lowercase().as_str() {
 				"c" => "SOURCE_C".to_string(),
 				"sh" => "SOURCE_BASH".to_string(),
+				"js" => "SOURCE_JS".to_string(),
 
 				// TODO: Add more output types
 
