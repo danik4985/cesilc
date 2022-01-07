@@ -15,7 +15,7 @@ Ladies and gentlemen, [CESIL](https://en.wikipedia.org/wiki/CESIL) time. That's 
 ## Installation
 > There is currently no binary build for macos. That is because linux -> mac cross-compilation fails with some long and chaotic error message and It would be super complicated to fix and I don't want to have to read the Xcode license and I'm sure it would make me give all my copyright rights to Apple [...]
 
-There are binaries and installation scripts for Linux and Shitdows in releases. On shitdows running the installation script should be enough.
+There are installation scripts in the releases.
 
 ## Syntax
 I was not able to find any official specifictions, so I had to go mainly by the wikipedia article. When it was first created, cesil was punched onto punch cards. This means that the syntax written in a text file on a computer must be modified a little. Here is what I did:
