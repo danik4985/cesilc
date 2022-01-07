@@ -6,7 +6,7 @@
 
 > CESIL, or Computer Education in Schools Instruction Language, is a programming language designed to introduce pupils in British secondary schools to elementary computer programming. It is a simple language containing a total of fourteen instructions. 
 
-[![license: GPLv3](https://img.shields.io/badge/license-GPLv3-blue.svg)](COPYING) [![version: 1.1.0](https://img.shields.io/badge/version-1.0.0-green.svg)](README.md) [![build: linux and shitdows only](https://img.shields.io/badge/build-linux%20and%20shitdows%20only-yellow.svg)](README.md) [![amogus: sus](https://img.shields.io/badge/amogus-sus-black.svg)](README.md)
+[![license: GPLv3](https://img.shields.io/badge/license-GPLv3-blue.svg)](COPYING) [![version: 1.1.0](https://img.shields.io/badge/version-1.1.0-green.svg)](README.md) [![build: linux and shitdows only](https://img.shields.io/badge/build-linux%20and%20shitdows%20only-yellow.svg)](README.md) [![amogus: sus](https://img.shields.io/badge/amogus-sus-black.svg)](README.md)
 
 Ladies and gentlemen, [CESIL](https://en.wikipedia.org/wiki/CESIL) time. That's right, I did it again! And this time it works (maybe).
 
