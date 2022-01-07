@@ -17,8 +17,6 @@ Ladies and gentlemen, [CESIL](https://en.wikipedia.org/wiki/CESIL) time. That's 
 
 There are binaries and installation scripts for Linux and Shitdows in releases. On shitdows running the installation script should be enough.
 
-**Install scripts coming when I find a way to download file from gh releases**
-
 ## Syntax
 I was not able to find any official specifictions, so I had to go mainly by the wikipedia article. When it was first created, cesil was punched onto punch cards. This means that the syntax written in a text file on a computer must be modified a little. Here is what I did:
 - You are not forced to use columns
