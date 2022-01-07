@@ -227,8 +227,8 @@ fn to_js(result: ParseResult, data: Vec<i64>, _interactive: bool) -> String {
 	return out;
 }
 
-pub fn transpile_to_js() -> Box<dyn Fn(ParseResult, Vec<i64>, bool) -> String> {
-	return Box::new(|result, data, interactive| {
+pub fn transpile_to_js() -> Box<dyn Fn(ParseResult, Vec<i64>, bool, bool) -> String> {
+	return Box::new(|result, data, interactive, _| {
 		return to_js(result, data, interactive);
 	});
 }

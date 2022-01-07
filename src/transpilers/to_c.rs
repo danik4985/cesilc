@@ -318,8 +318,8 @@ fn to_c(result: ParseResult, data: Vec<i64>, interactive: bool) -> String {
 	return out;
 }
 
-pub fn transpile_to_c() -> Box<dyn Fn(ParseResult, Vec<i64>, bool) -> String> {
-	return Box::new(|result, data, interactive| {
+pub fn transpile_to_c() -> Box<dyn Fn(ParseResult, Vec<i64>, bool, bool) -> String> {
+	return Box::new(|result, data, interactive, _| {
 		return to_c(result, data, interactive);
 	});
 }

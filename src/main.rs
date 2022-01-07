@@ -49,7 +49,7 @@ fn main() {
 		_ => transpile_to_c()
 	};
 
-	let transpiled = transpile_function(instructions, data, args.interactive);
+	let transpiled = transpile_function(instructions, data, args.interactive, args.optimize);
 
 	// println!("{}", transpiled);
 
