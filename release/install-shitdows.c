@@ -34,8 +34,7 @@ int main(int argc, char const *argv[]) {
 		} else {
 			char command[1024];
 			snprintf(command, 1024, "runas %s att", argv[0]);
-			system(command);
-			return 0;
+			return system(command);;
 		}
 		
 	}
