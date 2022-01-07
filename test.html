@@ -13,8 +13,10 @@
 			><span style="color: gray;">=== OUTPUT BEGINS HERE ===</span> <br></div>
 		<script src="test.js"></script>
 		<script>
-			window.CESIL_RUN('#output')
-			document.getElementById('output').innerHTML += '<span style="color: gray;">=== END OF PROGRAM ===</span>'
+			window.onload = async () => {
+				window.CESIL_RUN('#output')
+				document.getElementById('output').innerHTML += '<span style="color: gray;">=== END OF PROGRAM ===</span>'
+			}
 		</script>
 	</body>
 </html>

@@ -15,9 +15,7 @@ Ladies and gentlemen, [CESIL](https://en.wikipedia.org/wiki/CESIL) time. That's 
 ## Installation
 > There is currently no binary build for macos. That is because linux -> mac cross-compilation fails with some long and chaotic error message and It would be super complicated to fix and I don't want to have to read the Xcode license and I'm sure it would make me give all my copyright rights to Apple [...]
 
-There are binaries and installation scripts for Linux and Shitdows in releases. On shitdows running the installation script should be enough. On linux, you need to run it with `sudo`!
-
-(Actually the installation scripts aren't ready yet, Ill add them later!)
+There are binaries and installation scripts for Linux and Shitdows in releases. On shitdows running the installation script should be enough.
 
 **Install scripts coming when I find a way to download file from gh releases**
 
