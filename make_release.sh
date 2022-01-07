@@ -40,9 +40,13 @@ echo -e "\e[1m$status\e[0m"
 
 echo "Now lets make install scripts"
 
+echo "Turning exe file into a header"
 xxd -i release/cesilc.exe > release/cesilc.h
 
+echo "Creating install script for linux"
 node gen-install-linux.js
+
+echo "Creating installer for shitdows"
 i686-w64-mingw32-gcc release/install-shitdows.c -o install-shitdows.exe
 
 echo "Done!"
