@@ -79,6 +79,12 @@ The compiler will detect the target you want from the output file extension.
 - [ ] APKs (using java)
 - [ ] Batch files (MS-DOS compatible)
 
+#### Compilation to JS
+1. Currently only works in browser
+2. You include the build script in the browser using `<script src="your-script.js">` and then use `window.CESIL_RUN(...)`
+3. If you give the `CESIL_RUN` function a function as an argument (eg `window.CESIL_RUN(x => console.log(">" + x))`), that function will be used for logging. If you give it a query selector (eg `window.CESIL_RUN('#output')`), it will put output into the selected element.
+4. Feel free to use the code from test.html
+
 Dm me on discord if you want to request a compilation target!
 
 ## API coverage

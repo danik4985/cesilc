@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CESIL test</title>
+	</head>
+	<body>
+		<div
+			id="output"
+			style="background-color: darkslategray; color: white; font-family: monospace; font-size: 1.5em; padding: 1em;"
+			><span style="color: gray;">=== OUTPUT BEGINS HERE ===</span> <br></div>
+		<script src="test.js"></script>
+		<script>
+			window.CESIL_RUN('#output')
+			document.getElementById('output').innerHTML += '<span style="color: gray;">=== END OF PROGRAM ===</span>'
+		</script>
+	</body>
+</html>
