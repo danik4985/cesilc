@@ -1,4 +1,4 @@
-<p style="text-align: center">
+<p align="center">
 	<img src="https://miro.medium.com/max/1400/0*AJK4a0G1gaknToSP.jpg" alt="cesil banner" style="height: 250px; width: auto">
 </p>
 
