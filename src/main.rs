@@ -35,6 +35,18 @@ fn main() {
 		return;
 	}
 
+	if args.file == "" {
+		println!("No input file specified.");
+		println!("Use --help for more information.");
+		return;
+	}
+
+	if args.output == "" {
+		println!("No output file specified.");
+		println!("Use --help for more information.");
+		return;
+	}
+
 	let source_raw = std::fs::read_to_string(args.file).unwrap();
 	let lines = parsing::to_lines(source_raw.clone());
 	let data = parsing::parse_data(lines.clone());
