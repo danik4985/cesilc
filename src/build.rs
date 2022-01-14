@@ -1,4 +1,19 @@
+fn test_if_gcc_installed() -> bool {
+	let output = std::process::Command::new("gcc")
+		.arg("-v")
+		.output()
+		.expect("Failed to execute gcc");
+
+	return output.status.success();
+}
+
 pub fn build_binary(path: String, source: String, optimize: bool) {
+	if !test_if_gcc_installed() {
+		println!("Cesilc: gcc is not installed. Please install it to compile directly to binaries.");
+		// TODO: clang support maybe :flushed:
+		return;
+	}
+
 	let fpath = format!("..{}.~.c", path);
 	let write_result = std::fs::write(fpath.clone(), source);
 
