@@ -13,7 +13,7 @@ Ladies and gentlemen, [CESIL](https://en.wikipedia.org/wiki/CESIL) time. That's 
 47 years later, introducing a brand new, fast, epic cesil compiler.
 
 ## Installation
-> There is currently no binary build for macos. That is because linux -> mac cross-compilation fails with some long and chaotic error message and It would be super complicated to fix and I don't want to have to read the Xcode license and I'm sure it would make me give all my copyright rights to Apple [...]
+> There is currently no binary build for macos. That is because linux -> mac cross-compilation fails with some long and chaotic error message and It would be super complicated to fix and I don't want to have to read the Xcode license and I'm sure it would make me give all my copyright rights to Apple \[...]
 
 There are installation scripts in the releases.
 
