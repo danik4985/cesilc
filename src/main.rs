@@ -25,9 +25,16 @@ mod transpilers;
 mod naming_manager;
 mod build;
 mod preprocessor;
+mod help;
 
 fn main() {
 	let args = args::parse_args();
+
+	if args.help {
+		help::print_help();
+		return;
+	}
+
 	let source_raw = std::fs::read_to_string(args.file).unwrap();
 	let lines = parsing::to_lines(source_raw.clone());
 	let data = parsing::parse_data(lines.clone());

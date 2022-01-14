@@ -3,9 +3,12 @@ pub struct Args {
 	pub output: String,
 	pub outtype: String,
 	pub interactive: bool,
-	pub optimize: bool
+	pub optimize: bool,
+	pub help: bool
 }
 
+// This function is terrible.
+// I hate it.
 pub fn parse_args() -> Args {
 	let mut file = String::new();
 	let mut output = String::new();
@@ -13,6 +16,7 @@ pub fn parse_args() -> Args {
 	let mut interactive = false;
 	let mut next_is_output = false;
 	let mut optimize = false;
+	let mut help = false;
 
 	// Get the command line arguments
 	let args: Vec<String> = std::env::args().collect();
@@ -48,12 +52,14 @@ pub fn parse_args() -> Args {
 			next_is_output = true;
 		} else if i == "-O" || i == "--optimize" {
 			optimize = true;
+		} else if i == "-h" || i == "--help" {
+			help = true;
 		} else {
 			file = i.clone();
 		}
 	}
 
 	return Args {
-		file, output, outtype, interactive, optimize
+		file, output, outtype, interactive, optimize, help
 	};
 }

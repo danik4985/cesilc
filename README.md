@@ -89,14 +89,7 @@ Dm me on discord if you want to request a compilation target!
 
 ## CLI usage
 
-The CLI usage goes as follows
-```
-cesilc <INPUT> -o <OUTPUT> [Options]
-
--o, --output      : The output file
--i, --interactive : If this flag is used, you can use the `UIN` instruction
--O, --optimize    : Optimize the output (WIP)
-```
+Run `cesilc --help` to get cli usage information.
 
 ## Roadmap
 - [ ] Catch some errors at compilation time
@@ -120,7 +113,7 @@ This program uses the GPLv3 license. See its full text in the [COPYING](COPYING)
 
 ```
 Cesil compiler/transpiler
-Copyright (C) 2021 danik4985
+Copyright (C) 2022 danik4985
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
