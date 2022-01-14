@@ -1,9 +1,9 @@
        IN
        STORE    NUM
-       LOAD 0
+       LOAD     0
        STORE    ATT
 LOOP   LOAD     ATT
-       ADD 1
+       ADD      1
        STORE    ATT
        PRINT    "Your guess: "
        UIN
