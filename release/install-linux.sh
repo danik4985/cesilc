@@ -11,6 +11,8 @@ if [ "$(id -u)" != "0" ]; then
 	exit $?
 fi
 
+echo "Installing CesilC version &&VERSION&&"
+
 # If cesilc already installed, remove it
 if [[ -f /usr/local/bin/cesilc ]]; then
 	echo "Removing old cesilc binary"
