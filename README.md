@@ -149,5 +149,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 - Compilation to mac and shitdows binaries isn't tested. In case it doesnt work, compile to c source and use your compiler to compile that. (And report it to issues).
 - To compile to binaries, you need to have `gcc` installed.
 - If you encounter any problems, please report them in the *issues* tab.
+- If you enjoy this project, I would be very happy if you starred it (so that more people see it.) ⭐
 
 <!-- Why does git hate me?? -->
