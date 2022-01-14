@@ -1,4 +1,6 @@
 pub fn print_help() {
+	println!("CesilC - A compiler/transpiler for Cesil");
+	println!("");
 	println!("Usage: cesilc [OPTIONS] <file>");
 	println!("");
 	println!("Options:");
