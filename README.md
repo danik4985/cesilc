@@ -91,6 +91,22 @@ Dm me on discord if you want to request a compilation target!
 
 Run `cesilc --help` to get cli usage information.
 
+## Preprocessor
+
+CesilC has its own preprocessor! It currently only has one command: `#include filename`
+
+#### Careful!
+
+Do **not** enclose the file name in `"`
+
+```
+( Correct
+#include source.ces
+
+( Wrong
+#include "source.ces"
+```
+
 ## Roadmap
 - [ ] Catch some errors at compilation time
 - [ ] Error handeling so the compiler doesnt ever crash
