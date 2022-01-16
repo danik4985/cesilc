@@ -191,6 +191,7 @@ fn to_js(result: ParseResult, data: Vec<i64>, _interactive: bool) -> String {
 		
 			function core(printFnc) {{
 				print = printFnc
+				lineEnd = window.CESIL_LINE_END ?? lineEnd
 				while (currentLabel) currentLabel = LABELS[currentLabel]()
 			}}
 		
