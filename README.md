@@ -115,8 +115,7 @@ Do **not** enclose the file name in `"`
 - [ ] ...
 
 ## VsCode cesil highlighting?
-Coming whenever someone makes one or I learn how to make vscode language extensions.
-Btw, I'm thinking I will make my own CESIL IDE, since studio for visual programming by micronesian software isn't ideal for this.
+[Here](https://marketplace.visualstudio.com/items?itemName=danik4985.cesil-lang&ssr=false#overview)
 
 ## Additional questions
 If you have any questions or want to contact me for any reason, add me on discord: `danik#4985`
