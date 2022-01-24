@@ -74,6 +74,7 @@ The compiler will detect the target you want from the output file extension.
 - [ ] Java
 - [ ] APKs (using java)
 - [ ] Batch files (MS-DOS compatible)
+- [ ] PHP
 
 #### Compilation to JS
 1. Currently only works in browser
