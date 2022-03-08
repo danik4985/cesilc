@@ -18,6 +18,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 use transpilers::{to_sh::transpile_to_sh, to_js::transpile_to_js, to_c::transpile_to_c};
 
+use crate::transpilers::to_php::transpile_to_php;
+
 mod args;
 mod parsing;
 mod utils;
@@ -64,6 +66,7 @@ fn main() {
 		"SOURCE_BASH" => transpile_to_sh(),
 		"BINARY" => transpile_to_c(),
 		"SOURCE_JS" => transpile_to_js(),
+		"SOURCE_PHP" => transpile_to_php(),
 
 		_ => transpile_to_c()
 	};

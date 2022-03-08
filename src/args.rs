@@ -32,6 +32,7 @@ pub fn parse_args() -> Args {
 				"c" => "SOURCE_C".to_string(),
 				"sh" => "SOURCE_BASH".to_string(),
 				"js" => "SOURCE_JS".to_string(),
+				"php" => "SOURCE_PHP".to_string(),
 
 				// TODO: Add more output types
 
