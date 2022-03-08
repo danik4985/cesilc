@@ -69,12 +69,12 @@ The compiler will detect the target you want from the output file extension.
 - [x] native binaries (No extension [linux]/.app [MacOS]/.exe [Shitdows])
 - [x] Bash (.sh)
 - [x] JavaScript (.js)
+- [x] PHP
 
 ### Planned
 - [ ] Java
 - [ ] APKs (using java)
 - [ ] Batch files (MS-DOS compatible)
-- [ ] PHP
 
 #### Compilation to JS
 1. Currently only works in browser
@@ -82,6 +82,12 @@ The compiler will detect the target you want from the output file extension.
 3. If you give the `CESIL_RUN` function a function as an argument (eg `window.CESIL_RUN(x => console.log(">" + x))`), that function will be used for logging. If you give it a query selector (eg `window.CESIL_RUN('#output')`), it will put output into the selected element.
 4. You can define `window.CESIL_LINE_END` to set a custom line break string.
 5. Feel free to use the code from test.html
+
+#### Compilation to PHP
+The line delimeter (\n for terminal, < br > for browser) is determined by if interactive mode is on. If you want to compile for terminal without interactive mode, change the **line 8** of your compilation result to say
+```php
+$LINE = "\n";
+```
 
 Dm me on discord if you want to request a compilation target!
 
